@@ -1,6 +1,6 @@
 import React from "react";
 
-import AddTask1Modal from "modals/AddTask1";
+import { useNavigate } from "react-router-dom";
 import {
   Column,
   Row,
@@ -16,13 +16,22 @@ import {
 } from "components";
 
 const DashboardPage = () => {
-  const [isOpenAddTask1Modal, setAddTask1Modal] = React.useState(false);
+  const navigate = useNavigate();
 
-  function handleOpenAddTask1Modal() {
-    setAddTask1Modal(true);
+  function handleNavigate1() {
+    navigate("/tasks");
   }
-  function handleCloseAddTask1Modal() {
-    setAddTask1Modal(false);
+  function handleNavigate2() {
+    navigate("/tasks");
+  }
+  function handleNavigate3() {
+    navigate("/products");
+  }
+  function handleNavigate4() {
+    navigate("/addmeeting");
+  }
+  function handleNavigate5() {
+    navigate("/addtask");
   }
 
   return (
@@ -61,16 +70,18 @@ const DashboardPage = () => {
                 />
                 <Img
                   src="images/img_vector_30.png"
-                  className="lg:h-[15px] xl:h-[17px] h-[19px] 2xl:h-[20px] 3xl:h-[23px] lg:mt-[27px] xl:mt-[31px] mt-[35px] 3xl:mt-[42px] w-[32%]"
+                  className="common-pointer lg:h-[15px] xl:h-[17px] h-[19px] 2xl:h-[20px] 3xl:h-[23px] lg:mt-[27px] xl:mt-[31px] mt-[35px] 3xl:mt-[42px] w-[32%]"
+                  onClick={handleNavigate3}
                   alt="Vector"
                 />
                 <Button
                   className="common-pointer bg-transparent lg:mt-[28px] xl:mt-[32px] mt-[36px] 3xl:mt-[43px] text-center w-[36%]"
-                  onClick={handleOpenAddTask1Modal}
+                  onClick={handleNavigate2}
                 ></Button>
                 <Img
                   src="images/img_vector_32.png"
-                  className="lg:h-[16px] xl:h-[18px] h-[20px] 2xl:h-[21px] 3xl:h-[25px] lg:mt-[28px] xl:mt-[32px] mt-[36px] 3xl:mt-[43px] lg:w-[15px] xl:w-[17px] w-[20px] 3xl:w-[24px]"
+                  className="common-pointer lg:h-[16px] xl:h-[18px] h-[20px] 2xl:h-[21px] 3xl:h-[25px] lg:mt-[28px] xl:mt-[32px] mt-[36px] 3xl:mt-[43px] lg:w-[15px] xl:w-[17px] w-[20px] 3xl:w-[24px]"
+                  onClick={handleNavigate1}
                   alt="Vector"
                 />
                 <Img
@@ -212,6 +223,7 @@ const DashboardPage = () => {
                     </Text>
                     <Button
                       className="3xl:ml-[570px] 3xl:p-[9px] bg-gray_50 border border-gray_201 border-solid flex items-center justify-center lg:ml-[369px] lg:p-[6px] ml-[475px] p-[8px] rounded-bl-[4px] rounded-br-[0] rounded-tl-[4px] rounded-tr-[0] text-center w-[12%] xl:ml-[422px] xl:p-[7px]"
+                      onClick={handleNavigate5}
                       leftIcon={
                         <Img
                           src="images/img_addtask_1.png"
@@ -220,12 +232,13 @@ const DashboardPage = () => {
                         />
                       }
                     >
-                      <div className="bg-transparent font-normal font-sourcesanspro not-italic lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-bluegray_701">
+                      <div className="common-pointer bg-transparent font-normal font-sourcesanspro not-italic lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-bluegray_701">
                         Add task
                       </div>
                     </Button>
                     <Button
                       className="3xl:pl-[12px] 3xl:pr-[10px] 3xl:py-[9px] bg-gray_50 border border-gray_201 border-solid flex items-center justify-center lg:px-[7px] lg:py-[6px] pl-[10px] pr-[9px] py-[8px] text-center w-[15%] xl:px-[8px] xl:py-[7px]"
+                      onClick={handleNavigate4}
                       leftIcon={
                         <Img
                           src="images/img_vector_39.png"
@@ -234,7 +247,7 @@ const DashboardPage = () => {
                         />
                       }
                     >
-                      <div className="bg-transparent font-normal font-sourcesanspro not-italic lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-bluegray_701">
+                      <div className="common-pointer bg-transparent font-normal font-sourcesanspro not-italic lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-bluegray_701">
                         Add meeting
                       </div>
                     </Button>
@@ -666,13 +679,6 @@ const DashboardPage = () => {
           </Column>
         </Row>
       </Column>
-
-      {isOpenAddTask1Modal ? (
-        <AddTask1Modal
-          isOpen={isOpenAddTask1Modal}
-          onRequestClose={handleCloseAddTask1Modal}
-        />
-      ) : null}
     </>
   );
 };

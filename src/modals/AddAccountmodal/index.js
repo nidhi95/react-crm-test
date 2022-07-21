@@ -26,7 +26,7 @@ const AddAccountmodalModal = (props) => {
         toast.error("Error.!");
       });
   }
-  function handleNavigate1() {
+  function handleNavigate6() {
     navigate("/account");
   }
 
@@ -150,7 +150,7 @@ const AddAccountmodalModal = (props) => {
           <Row className="bg-gray_100 border border-indigo_50 border-solid items-center justify-center lg:p-[18px] xl:p-[21px] p-[24px] 3xl:p-[28px] w-[56%]">
             <Button
               className="common-pointer bg-white_A700 font-normal lg:ml-[274px] xl:ml-[314px] ml-[353px] 3xl:ml-[423px] not-italic lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-bluegray_701 text-center w-[14%]"
-              onClick={handleNavigate1}
+              onClick={handleNavigate6}
               shape="RoundedBorder4"
               size="sm"
               variant="OutlineGray201"

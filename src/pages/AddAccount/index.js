@@ -37,10 +37,10 @@ const AddAccountPage = () => {
         toast.error("Error.! PLease try again.!");
       });
   }
-  function handleNavigate4() {
+  function handleNavigate9() {
     navigate("/account");
   }
-  function handleNavigate5() {
+  function handleNavigate10() {
     navigate("/account");
   }
 
@@ -516,12 +516,12 @@ const AddAccountPage = () => {
         <Row className="absolute bg-gray_900_d8 justify-end lg:pl-[441px] xl:pl-[505px] pl-[568px] 3xl:pl-[681px] w-[100%]">
           <Button
             className="common-pointer bg-white_A700 flex lg:h-[50px] xl:h-[57px] h-[64px] 2xl:h-[65px] 3xl:h-[77px] items-center justify-center 3xl:mb-[1098px] lg:mb-[711px] xl:mb-[813px] mb-[915px] lg:mt-[35px] xl:mt-[40px] mt-[45px] 3xl:mt-[54px] lg:px-[17px] xl:px-[20px] px-[23px] 3xl:px-[27px] rounded-bl-[4px] rounded-br-[0] rounded-tl-[4px] rounded-tr-[0] lg:w-[49px] xl:w-[56px] w-[64px] 3xl:w-[76px]"
-            onClick={handleNavigate4}
+            onClick={handleNavigate9}
           >
             <Img
               src="images/img_frame467.png"
               className="flex items-center justify-center"
-              onClick={handleNavigate4}
+              onClick={handleNavigate9}
               alt="Frame467"
             />
           </Button>
@@ -675,7 +675,7 @@ const AddAccountPage = () => {
             <Row className="bg-gray_100 border border-indigo_50 border-solid items-center justify-end lg:p-[12px] xl:p-[14px] p-[16px] 3xl:p-[19px] w-[100%]">
               <Button
                 className="common-pointer bg-white_A700 font-normal lg:my-[6px] xl:my-[7px] my-[8px] 3xl:my-[9px] not-italic lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-bluegray_701 text-center w-[9%]"
-                onClick={handleNavigate5}
+                onClick={handleNavigate10}
                 shape="RoundedBorder4"
                 size="sm"
                 variant="OutlineGray201"

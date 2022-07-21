@@ -38,10 +38,10 @@ const AddMeetingPage = () => {
         toast.error("Error.!");
       });
   }
-  function handleNavigate2() {
+  function handleNavigate7() {
     navigate("/");
   }
-  function handleNavigate3() {
+  function handleNavigate8() {
     navigate("/");
   }
 
@@ -164,7 +164,7 @@ const AddMeetingPage = () => {
                 </Text>
                 <Column
                   className="common-pointer bg-amber_100 font-inter lg:h-[32px] xl:h-[36px] h-[40px] 2xl:h-[41px] 3xl:h-[49px] items-center lg:ml-[18px] xl:ml-[21px] ml-[24px] 3xl:ml-[28px] lg:px-[6px] xl:px-[7px] px-[8px] 3xl:px-[9px] rounded-radius50 lg:w-[31px] xl:w-[35px] w-[40px] 3xl:w-[48px]"
-                  onClick={handleNavigate3}
+                  onClick={handleNavigate8}
                 >
                   <Text className="hover:bg-red_600 cursor-pointer font-bold hover:font-normal mb-[1px] lg:text-[15px] xl:text-[17px] text-[20px] 3xl:text-[24px] text-amber_500 hover:text-bluegray_700 tracking-ls1 w-[auto]">
                     S
@@ -936,7 +936,7 @@ const AddMeetingPage = () => {
             <Row className="bg-gray_100 border border-indigo_50 border-solid items-center justify-end lg:p-[12px] xl:p-[14px] p-[16px] 3xl:p-[19px] w-[100%]">
               <Button
                 className="common-pointer bg-white_A700 font-normal lg:my-[6px] xl:my-[7px] my-[8px] 3xl:my-[9px] not-italic lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-bluegray_701 text-center w-[9%]"
-                onClick={handleNavigate2}
+                onClick={handleNavigate7}
                 shape="RoundedBorder4"
                 size="sm"
                 variant="OutlineGray201"
